@@ -18,9 +18,9 @@
                             <input type="text" value="{{ item }}" ng-model="item" ng-show="showInput" />
                         </td>
                         <td>
-                            <button class="btn btn-edit btn-sm" ng-show="showEditButton" ng-click="showItem = false; showInput = true; showEditButton = false;">Edit</button> 
-                            <button class="btn btn-edit btn-sm" ng-click="showItem = true; showInput = false; showEditButton = true;">Close</button>
-                            <button class="btn btn-danger btn-sm" ng-click="remove($index)">Remove</button>
+                            <button class="btn btn-edit btn-sm" ng-show="showEditButton" ng-click="edit();">Edit</button> 
+                            <button class="btn btn-edit btn-sm" ng-show="showCloseButton" ng-click="close();">Close</button>
+                            <button class="btn btn-danger btn-sm" ng-click="remove($index);">Remove</button>
                         </td>
                         <td><input type="checkbox" ng-model="finished" /> Finished</td>
                     </tr>                             
